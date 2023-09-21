@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "context/students/StudentState.js", "context/students/StudentContext.js", "pages/api/hello.js", "pages/_app.jsx", "pages/_document.jsx", "pages/AdminHome.jsx", "pages/AdminLogin.jsx", "pages/AdminProfile.jsx", "pages/AllotRoom.jsx", "pages/index.jsx", "pages/StudentHome.jsx", "pages/StudentLogin.jsx", "pages/StudentModal.jsx", "pages/StudentProfile.jsx", "components/StudentProfilePage.jsx", "components/StudentHomePage.jsx", "components/StudentDetailsModal.jsx", "components/RoomAllot.jsx", "components/LoginPage.jsx", "components/LoginForm.jsx", "components/loader.jsx", "components/AdminProfilePage.jsx", "components/AdminHomePage.jsx", "context/admins/AdminContext.js", "context/admins/AdminState.js"],
+  "exclude": ["node_modules"]
+}

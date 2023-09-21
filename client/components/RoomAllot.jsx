@@ -24,9 +24,13 @@ export default function RoomAllot() {
     value: element,
     label: element,
   }));
-  const sortNotAlloted = notAlloted.sort(
-    (a, b) => a.name.localeCompare(b.name)
-  );
+  let sortNotAlloted=[];
+  if (Array.isArray(notAlloted)) {
+    sortNotAlloted = notAlloted.sort(
+      (a, b) => a.name.localeCompare(b.name)
+    );
+  }
+  
   const option2 = sortNotAlloted.map((obj) => ({
     value: obj.name,
     label: obj.name,

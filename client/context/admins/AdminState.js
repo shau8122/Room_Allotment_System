@@ -4,7 +4,7 @@ import AdminContext from './AdminContext';
 import  {  useState } from "react";
 
 export default function  AdminState(props) {
-  const host = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const host = "https://room-allotment-api.onrender.com";
   const [adminData, setAdminData] = useState({});
   const [adminToken, setAdminToken] = useState("");
   const [isUserAdmin, setIsUserAdmin] = useState(false)

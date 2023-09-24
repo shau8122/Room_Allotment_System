@@ -9,7 +9,7 @@ export default function StudentState(props) {
   const [studentToken, setStudentToken] = useState("");
   const [students, setStudents] = useState([]);
   const [studentData, setStudentData] = useState({})
-  const host = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const host = "https://room-allotment-api.onrender.com";
   const verifyStudent = async (email, rollNo, loginPage) => {
     const formData = {
       email: email,

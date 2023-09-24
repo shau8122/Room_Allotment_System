@@ -15,7 +15,7 @@ export default function  AdminState(props) {
       email: email,
       rollNo: password,
     };
-    const url = `${host}/${loginPage}login`;
+    const url = `${host}/adminlogin`;
     const response = await fetch(url, {
       method: "POST",
       headers: {

@@ -14,9 +14,13 @@ const app = express();
 
 
 connectToDatabase()
-app.use(cors({
-  origin: process.env.CLIENT_URL
-}));
+app.use(cors())
+// app.use(cors({
+//   origin: process.env.CLIENT_URL,
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+//   credentials: true
+// }));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -161,6 +165,6 @@ app.post('/updateRooms',verifyAdmin,async(req,res)=>{
     res.status(500).send("some error occured");
   }
 })
-app.listen(5000,()=>{
-  console.log("app is connected to port 5000");
+app.listen( 5000,()=>{
+  console.log("app is connected to port",5000);
 });

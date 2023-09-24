@@ -15,7 +15,7 @@ export default function StudentState(props) {
       email: email,
       rollNo: rollNo,
     };
-    const url = `${host}/${loginPage}login`;
+    const url = `${host}/studentlogin`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
